@@ -1,0 +1,43 @@
+{
+  "name": "tamray-blogs",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "bash deploy.sh",
+    "editFm": "node utils/editFrontmatter.js",
+    "baiduPush": "node utils/baiduPush.js https://xugaoyi.com && bash baiduPush.sh",
+    "publish": "cd theme-vdoing && npm publish && cd ../ && npm update vuepress-theme-vdoing"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "inquirer": "^7.1.0",
+    "json2yaml": "^1.1.0",
+    "moment": "^2.25.3",
+    "vuepress": "1.5.2",
+    "vuepress-plugin-baidu-autopush": "^1.0.1",
+    "vuepress-plugin-baidu-tongji": "^1.0.1",
+    "vuepress-plugin-demo-block": "^0.7.2",
+    "vuepress-plugin-one-click-copy": "^1.0.2",
+    "vuepress-plugin-thirdparty-search": "^1.0.2",
+    "vuepress-plugin-zooming": "^1.1.7",
+    "vuepress-theme-vdoing": "^1.4.2",
+    "yamljs": "^0.3.0",
+    "@vuepress/plugin-back-to-top": "^1.5.3",
+    "@vuepress/plugin-medium-zoom": "^1.5.3",
+    "@vuepress/plugin-pwa": "^1.5.4",
+    "markdown-it-footnote": "^3.0.2",
+    "markdown-it-ins": "^3.0.0",
+    "markdown-it-mark": "^3.0.0",
+    "markmap-lib": "^0.8.0",
+    "vuepress-plugin-flowchart": "^1.4.3",
+    "vuepress-plugin-toolbar": "^1.0.1"
+  },
+  "dependencies": {
+    "vuepress-plugin-comment": "^0.7.3",
+    "markdown-it-katex": "^2.0.3",
+    "vuepress-plugin-auto-sidebar": "^1.5.0",
+    "vuepress-plugin-mermaidjs": "^1.7.1"
+  }
+
+}
