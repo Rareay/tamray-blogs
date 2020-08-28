@@ -2,6 +2,7 @@ module.exports = [
   {text: '首页', link: '/'},
   {
     text: '机器视觉',
+    link: '/pages/220ed1/',
     items: [
       {text: 'Opencv', link: '/pages/220ed1/'},
       {text: 'Slame',  link: '/pages/9fc2c3/'},
@@ -9,6 +10,7 @@ module.exports = [
   },
   {
     text: '编程语言',
+    link: '/pages/284548/',
     items: [
       {text: 'Rust',   link: '/pages/284548/'},
       {text: 'C++',    link: '/pages/49b2e8/'},
@@ -21,6 +23,7 @@ module.exports = [
   },
   {
     text: '应用',
+    link: '/pages/5ab9cc/',
     items: [
       {text: 'Qt',    link: '/pages/5ab9cc/'},
       {text: 'Boost', link: '/pages/7a8b47/'},
@@ -39,15 +42,15 @@ module.exports = [
   //  ]
   //}
 
-  {text: '关于', link: '/about/'},
+  //{text: '关于', link: '/about/'},
   {
     text: '收藏',
     link: '/pages/beb6c0bd8a66cea6/',
-    items: [
-      {text: '网站', link: '/pages/beb6c0bd8a66cea6/'},
-      {text: '资源', link: '/pages/eee83a9211a70f9d/'},
-      {text: 'Vue资源', link: '/pages/12df8ace52d493f6/'},
-    ]
+    //items: [
+    //  {text: '网站', link: '/pages/beb6c0bd8a66cea6/'},
+    //  {text: '资源', link: '/pages/eee83a9211a70f9d/'},
+    //  {text: 'Vue资源', link: '/pages/12df8ace52d493f6/'},
+    //]
   },
   {
     text: '索引',

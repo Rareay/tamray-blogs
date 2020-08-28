@@ -1,22 +1,15 @@
 const nav = require('./config/nav.js');
+const pluginConf = require('./config/pluginConf');
+const headConf = require('./config/headConf');
 
 module.exports = {
   title: "积跬步 - 至千里",
   description: '简洁至上,专注学习与总结。', // 描述,以 <meta> 标签渲染到页面html中
   // base: '/vuepress-theme-vdoing/', // '/<github仓库名>/'， 默认'/' 
-  head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
-    ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
-    ['meta', { name: 'keywords', content: 'Opencv,Slam,Rust,c++,Python,Linux,Ubuntu'}],
-    ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc'}],// 百度统计的站点拥有者验证
-    ['meta', { name: 'theme-color', content: '#11a8cd'}], // 移动浏览器主题颜色
-    // ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'}], // 移动端阻止页面缩放
-    ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css' }],
-    ['link', { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css" }],
-    ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
-    ['link', { rel: 'manifest', href: '/manifest.json' }],
-    ['meta', { name: 'theme-color', content: '#ffffff' }]
-  ],
+
+  head: headConf,
+  plugins: pluginConf,
+
   markdown: {
     lineNumbers: true, // 代码行数
     toc: { includeLevel: [1, 2] }, // 显示的目录深度
@@ -73,13 +66,13 @@ module.exports = {
     sidebar: 'structuring', // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
     
     author: { // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
-      name: 'xugaoyi', // 必需
-      link: 'https://github.com/xugaoyi' // 可选的
+      name: 'tamray', // 必需
+      link: 'https://github.com/Tamray/tamray-blogs' // 可选的
     },
     blogger:{ // 博主信息，显示在首页侧边栏
-      avatar: 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
-      name: 'Evan Xu',
-      slogan: '前端界的小学生'
+      avatar: '/head.jpg',
+      name: 'Tamray',
+      slogan: '我想听听你的故事'
     },
     social:{ // 社交图标，显示于博主信息栏和页脚栏
       // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
@@ -87,160 +80,24 @@ module.exports = {
         {
           iconClass: 'icon-youjian',
           title: '发邮件',
-          link: 'mailto:894072666@qq.com'
+          link: 'mailto:985480276@qq.com'
         },
         {
           iconClass: 'icon-github',
           title: 'GitHub',
-          link: 'https://github.com/xugaoyi'
+          link: 'https://github.com/Tamray'
         },
         {
           iconClass: 'icon-erji',
           title: '听音乐',
-          link: 'https://music.163.com/#/playlist?id=755597173'
+          link: 'https://music.163.com'
         }
       ]
     },
     footer:{ // 页脚信息
-      createYear: 2019, // 博客创建年份
-      copyrightInfo: 'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
+      createYear: 2020, // 博客创建年份
+      copyrightInfo:  '个人记录', // 博客版权信息，支持a标签
     }
   },
-  plugins: [ // 插件
-    // [require('./plugins/love-me'), { // 鼠标点击爱心特效
-    //   color: '#11a8cd', // 爱心颜色，默认随机色
-    //   excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
-    // }],
-
-    ['thirdparty-search', { // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
-      thirdparty: [ // 可选，默认 []
-        {
-          title: '在MDN中搜索',
-          frontUrl: 'https://developer.mozilla.org/zh-CN/search?q=', // 搜索链接的前面部分
-          behindUrl: '' // 搜索链接的后面部分，可选，默认 ''
-        },
-        {
-          title: '在Runoob中搜索',
-          frontUrl: 'https://www.runoob.com/?s=',
-        },
-        {
-          title: '在Vue API中搜索',
-          frontUrl: 'https://cn.vuejs.org/v2/api/#',
-        },
-        {
-          title: '在Bing中搜索',
-          frontUrl: 'https://cn.bing.com/search?q='
-        },
-        {
-          title: '通过百度搜索本站的',
-          frontUrl: 'https://www.baidu.com/s?wd=site%3Axugaoyi.com%20'
-        }
-      ]
-    }],
-
-    'vuepress-plugin-baidu-autopush', // 百度自动推送
-
-    ['one-click-copy', { // 代码块复制按钮
-      copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
-      copyMessage: '复制成功', // default is 'Copy successfully and then paste it for use.'
-      duration: 1000, // prompt message display time.
-      showInMobile: false // whether to display on the mobile side, default: false.
-    }],
-    ['demo-block', { // demo演示模块 https://github.com/xiguaxigua/vuepress-plugin-demo-block
-      settings: {
-        // jsLib: ['http://xxx'], // 在线示例(jsfiddle, codepen)中的js依赖
-        // cssLib: ['http://xxx'], // 在线示例中的css依赖
-        // vue: 'https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js', // 在线示例中的vue依赖
-        jsfiddle: false, // 是否显示 jsfiddle 链接
-        codepen: true, // 是否显示 codepen 链接
-        horizontal: false // 是否展示为横向样式
-      }
-    }],
-    //[
-    //  'vuepress-plugin-zooming', // 放大图片
-    //  {
-    //    selector:'.theme-vdoing-content img:not(.no-zoom)', // 排除class是no-zoom的图片
-    //    options: {
-    //      bgColor: 'rgba(0,0,0,0.6)'
-    //    },
-    //  },
-    //],
-    [
-      'vuepress-plugin-baidu-tongji', // 百度统计
-      {
-        hm: '503f098e7e5b3a5b5d8c5fc2938af002'
-      }
-    ],
-    [
-      'vuepress-plugin-comment', // 评论
-      // {
-      //   choosen: 'valine', 
-      //   options: {
-      //     el: '#valine-vuepress-comment',
-      //     appId: 'qnS1jobNF7CROIQ0XYWBnVOH-gzGzoHsz',
-      //     appKey: 'LIKa0ePqFMkglQfOkN0JNK6c',
-      //     avatar: 'monsterid'
-      //   }
-      // },
-      {
-        choosen: 'gitalk', 
-        options: {
-          clientID: 'a6e1355287947096b88b',
-          clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-          repo: 'vuepress-theme-vdoing', // GitHub 仓库
-          owner: 'xugaoyi', // GitHub仓库所有者
-          admin: ['xugaoyi'], // 对仓库有写权限的人
-          // distractionFreeMode: true,
-          pagerDirection: 'last', // 'first'正序 | 'last'倒序
-          id: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>", //  页面的唯一标识,长度不能超过50
-          title: "「评论」<%- frontmatter.title %>", // GitHub issue 的标题
-          labels: ["Gitalk", "Comment"], // GitHub issue 的标签
-          body:"页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>" // GitHub issue 的内容
-        }
-      }
-    ],
-    [
-      '@vuepress/last-updated', // "上次更新"时间格式
-      {
-        transformer: (timestamp, lang) => {
-          const moment = require('moment') // https://momentjs.com/
-          return moment(timestamp).format('YYYY/MM/DD, H:MM:SS');
-        }
-      }
-    ],
-
-    "vuepress-plugin-auto-sidebar", {},
-    //'@vuepress/back-to-top', true,
-    '@vuepress/medium-zoom', {
-        selector: '.content__default img',
-    },
-    //'@vuepress/nprogress', {},
-    'vuepress-plugin-mermaidjs', {},
-    'vuepress-plugin-toolbar', {
-        'pageNav': {
-            name: '目录'
-        },
-        "opts": [{
-            icon: '',
-            name: '纯展示'
-        },
-        ]
-    },
-    '@vuepress/pwa', {
-        serviceWorker: true,
-        updatePopup: {
-          message: "发现新内容可用.",
-          buttonText: "刷新"
-        }
-    },
-    'flowchart', {},
-  ],
-  // configureWebpack: {
-  //   //webpack别名 如![Image from alias](~@alias/image.png)
-  //   resolve: {
-  //     alias: {
-  //       '@alias': 'path/to/some/dir'
-  //     }
-  //   }
-  // }
+  
 }

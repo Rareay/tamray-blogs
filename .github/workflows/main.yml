@@ -1,0 +1,42 @@
+name: Build vuepress and deploy to aliyun
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  build:
+    # 虚拟机为ubuntu18
+    runs-on: ubuntu-latest
+
+    # 选择分支，此次为master
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    # 安装vuepress
+    - name: vuepress install
+      #run:  yarn add vuepress@next -D
+      run:  yarn install
+      
+    # 编译vuepress
+    - name: Build
+      run:  yarn build
+      
+    - name: Deploy to Aliyun
+      uses: easingthemes/ssh-deploy@v2.1.1
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+        # scp参数
+        ARGS: "-avzr --delete"
+        # 源目录，编译后生成的静态文件目录
+        SOURCE: "docs/.vuepress/dist/"
+        # 服务器ip：换成你的服务器IP
+        REMOTE_HOST: "www.tamray.cn"
+        # 用户
+        REMOTE_USER: "root"
+        # 目标地址 你在服务器上部署代码的地方
+        TARGET: "/usr/local/nginx/html/"
+        # 端口默认22
+
