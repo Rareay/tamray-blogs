@@ -17,7 +17,10 @@ module.exports = {
       md.use(require('markdown-it-katex')), // 数学公式插件
       md.use(require('markdown-it-mark')), // 字符强调插件
       md.use(require('markdown-it-ins')), // 字符下划线插件
-      md.use(require('markdown-it-footnote')) // 字符下划线插件
+      md.use(require('markdown-it-footnote')), // 注释插件
+      md.use(require('markdown-it-sub')), // 下标插件
+      md.use(require('markdown-it-sup')) // 上标插件
+
     }
   },
 
@@ -29,7 +32,7 @@ module.exports = {
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/app.png', // 导航栏logo
     repo: 'https://github.com/Tamray/tr-blogs', // 导航栏右侧生成Github链接
-    repoLabel: '源码', // (查看源码的)组件名称
+    repoLabel: 'Github', // (查看源码的)组件名称
     docsBranch: 'master', // git 源仓库 仓库分支
     docsDir: 'docs', // 仓库下的文件夹
     editLinks: true, // 编辑链接
@@ -41,7 +44,7 @@ module.exports = {
     // category: false, // 是否打开分类功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含分类字段 2.页面中显示与分类相关的信息和模块 3.自动生成分类页面（在@pages文件夹）。如关闭，则反之。
     // tag: false, // 是否打开标签功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含标签字段 2.页面中显示与标签相关的信息和模块 3.自动生成标签页面（在@pages文件夹）。如关闭，则反之。
     // archive: false, // 是否打开归档功能，默认true。 如打开，会做的事情有：1.自动生成归档页面（在@pages文件夹）。如关闭，则反之。
-    // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
+    //categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
     
     // bodyBgImg: [
     //   'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
