@@ -21,8 +21,8 @@ module.exports = {
     }
   },
 
-  theme: 'vdoing', // 使用依赖包主题
-  // theme: require.resolve('../../theme-vdoing'), // 使用本地主题
+  //theme: 'vdoing', // 使用依赖包主题
+  theme: require.resolve('../../theme-vdoing'), // 使用本地主题
 
   themeConfig: { // 主题配置
     nav,
@@ -66,13 +66,13 @@ module.exports = {
     sidebar: 'structuring', // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
     
     author: { // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
-      name: 'tamray', // 必需
+      name: 'Tamray', // 必需
       link: 'https://github.com/Tamray/tamray-blogs' // 可选的
     },
     blogger:{ // 博主信息，显示在首页侧边栏
       avatar: '/head.jpg',
       name: 'Tamray',
-      slogan: '我想听听你的故事'
+      slogan: '听听你的故事'
     },
     social:{ // 社交图标，显示于博主信息栏和页脚栏
       // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
