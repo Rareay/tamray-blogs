@@ -2,7 +2,8 @@ module.exports = [
   {text: '首页', link: '/'},
   {
     text: '机器视觉',
-    link: '/pages/220ed1/',
+    link: '/vision/',
+    //link: '/pages/220ed1/',
     items: [
       {text: 'Opencv', link: '/pages/220ed1/'},
       {text: 'Slame',  link: '/pages/9fc2c3/'},
@@ -10,7 +11,7 @@ module.exports = [
   },
   {
     text: '编程语言',
-    link: '/pages/284548/',
+    link: '/language/',
     items: [
       {text: 'Rust',   link: '/pages/284548/'},
       {text: 'C++',    link: '/pages/49b2e8/'},
@@ -23,7 +24,7 @@ module.exports = [
   },
   {
     text: '应用',
-    link: '/pages/5ab9cc/',
+    link: '/application/',
     items: [
       {text: 'Qt',    link: '/pages/5ab9cc/'},
       {text: 'Boost', link: '/pages/7a8b47/'},

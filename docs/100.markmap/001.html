@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@5"></script><script src="https://cdn.jsdelivr.net/npm/markmap-lib@0.8.0/dist/browser/view.min.js"></script><script>((data, init, items, opts) => {
+        const {
+          Markmap,
+          loadPlugins
+        } = window.markmap;
+        (init ? init(loadPlugins, items, opts) : Promise.resolve()).then(() => {
+          window.mm = Markmap.create('svg#mindmap', null, data);
+        });
+      })({"t":"heading","d":1,"p":{},"v":"a","c":[{"t":"heading","d":2,"p":{},"v":"aa","c":[{"t":"heading","d":3,"p":{},"v":"bb"}]},{"t":"heading","d":2,"p":{},"v":"cc","c":[{"t":"heading","d":3,"p":{},"v":"dd"}]}]})</script>
+</body>
+</html>
