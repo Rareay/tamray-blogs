@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@5"></script><script src="https://cdn.jsdelivr.net/npm/markmap-lib@0.8.0/dist/browser/view.min.js"></script><script>((data, init, items, opts) => {
+        const {
+          Markmap,
+          loadPlugins
+        } = window.markmap;
+        (init ? init(loadPlugins, items, opts) : Promise.resolve()).then(() => {
+          window.mm = Markmap.create('svg#mindmap', null, data);
+        });
+      })({"t":"heading","d":1,"p":{},"v":"视觉里程计","c":[{"t":"heading","d":2,"p":{},"v":"特征点法","c":[{"t":"list_item","d":3,"p":{},"v":"特征提取、匹配","c":[{"t":"list_item","d":4,"p":{},"v":"SIFT"},{"t":"list_item","d":4,"p":{},"v":"SURF"},{"t":"list_item","d":4,"p":{},"v":"ORB"}]},{"t":"list_item","d":3,"p":{},"v":"2D-2D:对极几何","c":[{"t":"list_item","d":4,"p":{},"v":"对极约束"},{"t":"list_item","d":4,"p":{},"v":"本质矩阵"},{"t":"list_item","d":4,"p":{},"v":"单应矩阵"}]},{"t":"list_item","d":3,"p":{},"v":"三角测量"},{"t":"list_item","d":3,"p":{},"v":"3D-2D:PnP","c":[{"t":"list_item","d":4,"p":{},"v":"直接线性变换"},{"t":"list_item","d":4,"p":{},"v":"P3P"},{"t":"list_item","d":4,"p":{},"v":"最小化重投影误差求解PnP"}]},{"t":"list_item","d":3,"p":{},"v":"3D-3D:ICP","c":[{"t":"list_item","d":4,"p":{},"v":"SVD方法"},{"t":"list_item","d":4,"p":{},"v":"非线性优化"}]}]},{"t":"heading","d":2,"p":{},"v":"直接法"}]})</script>
+</body>
+</html>
