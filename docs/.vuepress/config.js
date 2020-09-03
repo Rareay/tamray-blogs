@@ -31,7 +31,7 @@ module.exports = {
     nav,
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/app.png', // 导航栏logo
-    repo: 'https://github.com/Tamray/tr-blogs', // 导航栏右侧生成Github链接
+    repo: 'https://github.com/Tamray/tamray-blogs', // 导航栏右侧生成Github链接
     repoLabel: 'Github', // (查看源码的)组件名称
     docsBranch: 'master', // git 源仓库 仓库分支
     docsDir: 'docs', // 仓库下的文件夹
