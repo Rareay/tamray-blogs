@@ -61,5 +61,9 @@ module.exports = [
       {text: '标签', link: '/tags/'},
       {text: '归档', link: '/archives/'},
     ]
+  },
+  {
+    text: '故事',
+    link: '/story/',
   }
 ]
