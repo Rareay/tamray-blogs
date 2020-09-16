@@ -11,7 +11,7 @@ module.exports = {
   plugins: pluginConf,
 
   markdown: {
-    lineNumbers: true, // 代码行数
+    //lineNumbers: true, // 代码行数
     toc: { includeLevel: [1, 2] }, // 显示的目录深度
     extendMarkdown: md => {
       md.use(require('markdown-it-katex')), // 数学公式插件
