@@ -7,6 +7,7 @@ module.exports = [
     items: [
       {text: 'Opencv', link: '/pages/220ed1/'},
       {text: 'Slame',  link: '/pages/9fc2c3/'},
+      {text: 'DeepLearning',  link: '/pages/c35cac/'},
     ]
   },
   {
@@ -15,7 +16,7 @@ module.exports = [
     items: [
       {text: 'Rust',   link: '/pages/284548/'},
       {text: 'C++',    link: '/pages/49b2e8/'},
-      {text: 'Python', link: '/pages/b9fb7b/'},
+      {text: 'Python', link: '/pages/c85dce/'},
     ]
   },
   {
