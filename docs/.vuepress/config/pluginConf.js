@@ -5,7 +5,11 @@ module.exports = {
       thirdparty: [ // 可选，默认 []
         {
           title: '百度搜索',
-          frontUrl: 'https://www.baidu.com/s?wd=site%3Axugaoyi.com%20'
+          frontUrl: 'https://www.baidu.com/s?wd='
+        },
+        {
+          title: 'Google搜索',
+          frontUrl: 'https://www.google.com/search?q='
         },
         {
           title: '必应搜索',
