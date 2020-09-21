@@ -66,5 +66,9 @@ module.exports = [
   {
     text: '故事',
     link: '/story/',
+  },
+  {
+    text: 'Google翻译',
+    link: 'https://translate.google.cn/',
   }
 ]
