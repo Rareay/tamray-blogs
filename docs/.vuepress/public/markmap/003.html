@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@5"></script><script src="https://cdn.jsdelivr.net/npm/markmap-lib@0.8.0/dist/browser/view.min.js"></script><script>((data, init, items, opts) => {
+        const {
+          Markmap,
+          loadPlugins
+        } = window.markmap;
+        (init ? init(loadPlugins, items, opts) : Promise.resolve()).then(() => {
+          window.mm = Markmap.create('svg#mindmap', null, data);
+        });
+      })({"t":"root","d":0,"v":"","c":[{"t":"heading","d":1,"p":{},"v":"绿茶","c":[{"t":"heading","d":2,"p":{},"v":"发酵度","c":[{"t":"list_item","d":3,"p":{},"v":"0%"}]},{"t":"heading","d":2,"p":{},"v":"代表","c":[{"t":"list_item","d":3,"p":{},"v":"西湖龙井、黄山毛峰、洞庭碧螺春、太平猴魁"}]},{"t":"heading","d":2,"p":{},"v":"喝法","c":[{"t":"list_item","d":3,"p":{},"v":"水温85度"},{"t":"list_item","d":3,"p":{},"v":"冲泡2-3min"}]},{"t":"heading","d":2,"p":{},"v":"适合人群","c":[{"t":"list_item","d":3,"p":{},"v":"白领"},{"t":"list_item","d":3,"p":{},"v":"体质偏热、胃火旺"}]},{"t":"heading","d":2,"p":{},"v":"不适人群","c":[{"t":"list_item","d":3,"p":{},"v":"脾胃虚寒"},{"t":"list_item","d":3,"p":{},"v":"神经虚弱"},{"t":"list_item","d":3,"p":{},"v":"失眠者"}]}]},{"t":"heading","d":1,"p":{},"v":"黄茶","c":[{"t":"heading","d":2,"p":{},"v":"发酵度","c":[{"t":"list_item","d":3,"p":{},"v":"10% - 20%"}]},{"t":"heading","d":2,"p":{},"v":"喝法","c":[{"t":"list_item","d":3,"p":{},"v":"水温90℃"},{"t":"list_item","d":3,"p":{},"v":"冲泡0.5min-1min"}]},{"t":"heading","d":2,"p":{},"v":"适合人群","c":[{"t":"list_item","d":3,"p":{},"v":"适合消化不良，食欲不振者"}]}]},{"t":"heading","d":1,"p":{},"v":"白茶","c":[{"t":"heading","d":2,"p":{},"v":"发酵度","c":[{"t":"list_item","d":3,"p":{},"v":"20% - 30%"}]},{"t":"heading","d":2,"p":{},"v":"喝法","c":[{"t":"list_item","d":3,"p":{},"v":"水温100℃"}]},{"t":"heading","d":2,"p":{},"v":"适合人群","c":[{"t":"list_item","d":3,"p":{},"v":"精神紧张、压力大者"},{"t":"list_item","d":3,"p":{},"v":"少年儿童"}]}]},{"t":"heading","d":1,"p":{},"v":"青茶（乌龙茶）","c":[{"t":"heading","d":2,"p":{},"v":"发酵度","c":[{"t":"list_item","d":3,"p":{},"v":"30% - 60%"}]},{"t":"heading","d":2,"p":{},"v":"喝法","c":[{"t":"list_item","d":3,"p":{},"v":"水温100℃"},{"t":"list_item","d":3,"p":{},"v":"冲泡后要加盖"}]},{"t":"heading","d":2,"p":{},"v":"适合人群","c":[{"t":"list_item","d":3,"p":{},"v":"需要减肥、吃得过饱、心情急躁的人"}]}]},{"t":"heading","d":1,"p":{},"v":"红茶","c":[{"t":"heading","d":2,"p":{},"v":"发酵度","c":[{"t":"list_item","d":3,"p":{},"v":"80% - 90%"}]},{"t":"heading","d":2,"p":{},"v":"喝法","c":[{"t":"list_item","d":3,"p":{},"v":"新鲜红茶需要放置半个月"},{"t":"list_item","d":3,"p":{},"v":"水温100℃"},{"t":"list_item","d":3,"p":{},"v":"冲泡3min-5min"}]},{"t":"heading","d":2,"p":{},"v":"适合人群","c":[{"t":"list_item","d":3,"p":{},"v":"身体较虚、脾胃功能差、手脚发凉者"}]}]},{"t":"heading","d":1,"p":{},"v":"黑茶","c":[{"t":"heading","d":2,"p":{},"v":"发酵度","c":[{"t":"list_item","d":3,"p":{},"v":"100%"}]},{"t":"heading","d":2,"p":{},"v":"代表","c":[{"t":"list_item","d":3,"p":{},"v":"云南普洱、湖南的安化黑茶、湖北的老青茶、广西的六堡茶"}]},{"t":"heading","d":2,"p":{},"v":"喝法","c":[{"t":"list_item","d":3,"p":{},"v":"水温100℃"}]},{"t":"heading","d":2,"p":{},"v":"适合人群","c":[{"t":"list_item","d":3,"p":{},"v":"肥胖、血糖高、血脂高、抽烟喝酒、便秘者"},{"t":"list_item","d":3,"p":{},"v":"虚寒体质者"}]}]}]})</script>
+</body>
+</html>
