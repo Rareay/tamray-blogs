@@ -7,7 +7,7 @@ module.exports = [
     items: [
       {text: 'Opencv', link: '/pages/220ed1/'},
       {text: 'Slame',  link: '/pages/9fc2c3/'},
-      {text: 'DeepLearning',  link: '/pages/c35cac/'},
+      {text: 'DL',  link: '/pages/c35cac/'},
     ]
   },
   {
