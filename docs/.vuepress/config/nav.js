@@ -5,7 +5,7 @@ module.exports = [
     link: '/vision/',
     //link: '/pages/220ed1/',
     items: [
-      {text: 'Opencv', link: '/pages/220ed1/'},
+      {text: 'Opencv', link: '/pages/444798/'},
       {text: 'Slame',  link: '/pages/9fc2c3/'},
       {text: 'DL',  link: '/pages/c35cac/'},
     ]
@@ -15,7 +15,7 @@ module.exports = [
     link: '/language/',
     items: [
       {text: 'Rust',   link: '/pages/284548/'},
-      {text: 'C++',    link: '/pages/49b2e8/'},
+      {text: 'C++',    link: '/pages/61a853/'},
       {text: 'Python', link: '/pages/c85dce/'},
     ]
   },
