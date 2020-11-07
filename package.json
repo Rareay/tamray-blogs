@@ -17,7 +17,7 @@
     "markdown-it-mark": "^3.0.0",
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
-    "markmap-lib": "^0.8.0",
+    "markmap-lib": "^0.9.3",
     "moment": "^2.25.3",
     "vuepress": "^1.0.0-rc.1",
     "vuepress-plugin-baidu-autopush": "^1.0.1",
@@ -31,6 +31,7 @@
     "yamljs": "^0.3.0"
   },
   "dependencies": {
+    "d3": "5",
     "markdown-it-katex": "^2.0.3",
     "vuepress-plugin-comment": "^0.7.3",
     "vuepress-plugin-mermaidjs": "^1.7.1"
