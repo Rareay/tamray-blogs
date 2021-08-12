@@ -33,7 +33,7 @@ module.exports = [
   },
   {
     text: '技术',
-    link: '/pages/7bc2e3/',
+    link: '/pages/0c9f95/',
   },
   //{
   //  text: '其它',

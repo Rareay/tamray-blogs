@@ -19,7 +19,7 @@
     "markdown-it-sup": "^1.0.0",
     "markmap-lib": "^0.9.3",
     "moment": "^2.25.3",
-    "vuepress": "^1.0.0-rc.1",
+    "vuepress": "^1.8.2",
     "vuepress-plugin-baidu-autopush": "^1.0.1",
     "vuepress-plugin-baidu-tongji": "^1.0.1",
     "vuepress-plugin-demo-block": "^0.7.2",
