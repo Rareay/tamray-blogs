@@ -63,10 +63,10 @@ module.exports = [
       {text: '归档', link: '/archives/'},
     ]
   },
-  {
-    text: '故事',
-    link: '/story/',
-  },
+  //{
+  //  text: '故事',
+  //  link: '/story/',
+  //},
   {
     text: 'Google翻译',
     link: 'https://translate.google.cn/',
