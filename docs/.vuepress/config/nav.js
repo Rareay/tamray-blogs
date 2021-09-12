@@ -29,6 +29,7 @@ module.exports = [
     items: [
       {text: 'Qt',    link: '/pages/5ab9cc/'},
       {text: 'Boost', link: '/pages/7a8b47/'},
+      {text: 'OpenGL', link: '/pages/1e6f48/'},
     ]
   },
   {
