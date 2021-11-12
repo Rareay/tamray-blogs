@@ -5,46 +5,43 @@ module.exports = [
     link: '/vision/',
     //link: '/pages/220ed1/',
     items: [
-      {text: 'Opencv', link: '/pages/444798/'},
-      {text: 'Slame',  link: '/pages/9fc2c3/'},
-      {text: 'DL',  link: '/pages/c35cac/'},
+      {text: 'DL',  link: '/pages/f3f2f0/'},
+      {text: 'ML',  link: '/pages/1e2d2c/'},
+      {text: 'SLAM',  link: '/pages/9fc2c3/'},
+      {text: 'OpenCV',  link: '/pages/444798/'},
+      {text: 'cv2',  link: '/pages/cd87eb/'},
+      {text: 'OpenGL',  link: '/pages/ec0c8f/'},
     ]
   },
   {
     text: '编程语言',
     link: '/language/',
     items: [
-      {text: 'Rust',   link: '/pages/284548/'},
-      {text: 'C++',    link: '/pages/61a853/'},
-      {text: 'Python', link: '/pages/c85dce/'},
+      {text: 'C',    link: '/pages/e39f4c/'},
+      {text: 'C++',    link: '/pages/72f95f/'},
+      {text: 'Rust',   link: '/pages/c85dce/'},
+      {text: 'Python', link: '/pages/284548/'},
+      {text: 'Cuda', link: '/pages/f1cc13/'},
     ]
   },
   {
     text: 'Linux',
-    link: '/pages/4f6102/',
-  },
-  {
-    text: '应用',
-    link: '/application/',
+    link: '/linux/',
     items: [
-      {text: 'Qt',    link: '/pages/5ab9cc/'},
-      {text: 'Boost', link: '/pages/7a8b47/'},
-      {text: 'OpenGL', link: '/pages/1e6f48/'},
+      {text: 'Use',    link: '/pages/25e2f6/'},
+      {text: 'System',    link: '/pages/194b22/'},
+      {text: 'Ubuntu',    link: '/pages/4f6102/'},
+      {text: 'Web',    link: '/pages/58872d/'},
     ]
   },
   {
-    text: '技术',
+    text: '金融',
     link: '/pages/0c9f95/',
   },
-  //{
-  //  text: '其它',
-  //  items: [
-  //    {test: '随写',      link: ''},
-  //    {test: '心理学文章', link: ''},
-  //    {test: '经济学文章', link: ''},
-  //  ]
-  //}
-
+  {
+    text: '技术',
+    link: '/pages/d9e47b/',
+  },
   //{text: '关于', link: '/about/'},
   {
     text: '收藏',
@@ -55,21 +52,17 @@ module.exports = [
     //  {text: 'Vue资源', link: '/pages/12df8ace52d493f6/'},
     //]
   },
-  {
-    text: '索引',
-    link: '/tags/',
-    items: [
-      {text: '分类', link: '/categories/'},
-      {text: '标签', link: '/tags/'},
-      {text: '归档', link: '/archives/'},
-    ]
-  },
   //{
-  //  text: '故事',
-  //  link: '/story/',
+  //  text: '索引',
+  //  link: '/tags/',
+  //  items: [
+  //    {text: '分类', link: '/categories/'},
+  //    {text: '标签', link: '/tags/'},
+  //    {text: '归档', link: '/archives/'},
+  //  ]
   //},
-  {
-    text: 'Google翻译',
-    link: 'https://translate.google.cn/',
-  }
+  //{
+  //  text: 'Google翻译',
+  //  link: 'https://translate.google.cn/',
+  //}
 ]

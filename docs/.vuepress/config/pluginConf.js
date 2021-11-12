@@ -11,10 +11,10 @@ module.exports = {
           title: 'Google搜索',
           frontUrl: 'https://www.google.com/search?q='
         },
-        {
-          title: '必应搜索',
-          frontUrl: 'https://cn.bing.com/search?q='
-        }
+        //{
+        //  title: '必应搜索',
+        //  frontUrl: 'https://cn.bing.com/search?q='
+        //}
       ]
     },
     //'vuepress-plugin-baidu-autopush': {}, // 百度自动推送
