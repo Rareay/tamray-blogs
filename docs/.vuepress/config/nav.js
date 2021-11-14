@@ -19,7 +19,7 @@ module.exports = [
     items: [
       {text: 'C',    link: '/pages/e39f4c/'},
       {text: 'C++',    link: '/pages/72f95f/'},
-      {text: 'Rust',   link: '/pages/c85dce/'},
+      {text: 'Rust',   link: '/pages/84548/'},
       {text: 'Python', link: '/pages/284548/'},
       {text: 'Cuda', link: '/pages/f1cc13/'},
     ]
