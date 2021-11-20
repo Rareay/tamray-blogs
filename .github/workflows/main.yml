@@ -33,7 +33,7 @@ jobs:
         # 源目录，编译后生成的静态文件目录
         SOURCE: "docs/.vuepress/dist/"
         # 服务器ip：换成你的服务器IP
-        REMOTE_HOST: "www.raray.cn"
+        REMOTE_HOST: "www.rareay.com"
         # 用户
         REMOTE_USER: "root"
         # 目标地址 你在服务器上部署代码的地方
