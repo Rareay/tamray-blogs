@@ -22,6 +22,7 @@ module.exports = [
       {text: 'Python',   link: '/pages/c85dce/'},
       {text: 'Rust', link: '/pages/284548/'},
       {text: 'Cuda', link: '/pages/f1cc13/'},
+      {text: 'Web', link: '/pages/069a48/'},
     ]
   },
   {
