@@ -1,2 +1,2 @@
 yarn build
-sudo cp -r docs/.vuepress/dist/* /usr/local/nginx/html/
+cp -r docs/.vuepress/dist/* /html/
