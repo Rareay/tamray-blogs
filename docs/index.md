@@ -1,7 +1,7 @@
 ---
 home: true
 # heroImage: /img/web.png
-heroText: Tamray's blog
+heroText: Rareay's blog
 tagline: Keep hungry. Keep foolish.
 #bannerBg: "/img/bg3.jpg"
 # actionText: 立刻进入 →
